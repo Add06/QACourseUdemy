@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork01</title>
+</head>
+<body>
+    <div>
+        <label for="a">First number :</label>
+        <input type="text" id="a">
+    </div>
+    <br>
+    <div>
+        <label for="b">Second number :</label>
+        <input type="text" id="b">
+    </div>
+    <br>
+    <div>
+        <label for="c">Third number :</label>
+        <input type="text" id="c">
+    </div>
+    <br>
+    <div>
+        <button onclick="findTheResult()">Calculate</button>
+    </div>
+    <h3 id="output">Result here...</h3>
+
+    <script>
+        function findTheResult() {
+            // Get the values of the input fields
+            var a = parseFloat(document.getElementById("a").value) || 0;
+            var b = parseFloat(document.getElementById("b").value) || 0;
+            var c = parseFloat(document.getElementById("c").value) || 0;
+
+            // Calculate the sum of the three numbers
+            var result = a + b + c;
+
+            // Display the result in the output element
+            document.getElementById("output").textContent = "Result: " + result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<script>
+
+let nume = "Adrian";  // tip de date : string 
+let varsta = 29; // tip de date : numeric 
+let aiFacutArmata = false ; // tip de date : bollean sau 1- true si 0 - false 
+
+const numeC = "Alin";
+const varstaC = 31; 
+const aiFacutArmataC = 0; 
+
+varsta = varsta / 2; // operatii de baza : - + / * %(modul-arata restul unei impartiti) 
+//console.log(varsta); 
+
+
+nume = nume + " Ianc"; // concatenare 
+
+aiFacutArmata = aiFacutArmata; 
+//console.log(aiFacutArmata); 
+
+
+let masini = ["dacia", "audi", "bmw", 2012]; // tip de date array sau vector 
+let votPresedinte = [2006, 2010, 2014]; // tip de date array sau vector 
+//console.log(masini[1,3]); 
+
+let masina = {
+  brand : "Audi",
+  model : "A4", 
+  anuFabricatie : 2014, 
+  inmatriculat : true, 
+  extraOptiuni : ["aer conditionat", "servo-directie", "geamuri-electrice"],
+  nrinmatriculare : "AB24ADD",
+  garaj : {
+    suprafata : 16, 
+    strada : "Bucuresti", 
+    ocupat : false
+  },
+  salut : function (){
+    //console.log("Salut sunt masina ta."); 
+  }
+
+}
+masina.salut(); // se foloseste mult in testare automata 
+
+
+
+//console.log(masina.garaj.strada); 
+
+
+// day 2 
+
+// IF function 
+
+
+a = 3; 
+b = 2; 
+c = 5; 
+
+if (a < b ){ // && - operatorul SI ; || operatorul SAU; 
+  //console.log("IF1"); // == egalitate;  dar === egalitate suprema ( sa fie acelasi tip de date)
+}
+
+else if (c < b ){
+  //console.log("IF2");
+
+//else if - se poate folosi de cate ori este nevoie 
+
+}
+else {
+  //console.log("ELSE "); 
+}
+
+
+// FOR function 
+
+// for - instructiune repetitiva; 
+// 3 lucruriu : iterator (variabila ) i=0 ; pana la ce nr sa repete 
+// pana la ce nr sa repete: i < 5 - sa repete de 5x 
+// i ++ : adauga 1 la variabila: iteram prin FOR 
+
+
+animale = ["pisica", "leu", "tigru"];
+
+for (i = 0;i<3;i++){
+  //console.log("Animal: " + animale[i]); 
+}
+
+// Functii (metode) 
+
+function salut(n){
+  console.log("Salut " + n);
+
+}
+// apelam sau executam o functie: 
+//salut("Adi"); 
+//salut ("Alex");
+
+
+function impartire (a,b){
+  console.log("Impartirea este = " + a/b); 
+}
+//impartire(8,5)
+
+function datePersonale (nume, varsta, angajat ){
+    let a; 
+  if (angajat === true ){
+    a = "angajat";
+
+
+  }
+  else {
+    a = "somer";
+  }
+
+  // console.log(nume + " are varsata de  " + varsta + " de ani si este " + a);
+}
+
+//datePersonale("Adi", 29, false);
+//datePersonale("Alex", 30 , true );
+
+// exista functii anonime- nu au nume si nu se pot apela iar pentru a le apela le lagam de obiecte. 
+
+
+function afisareMasini(x){
+  for(i=0; i < x.length; i++){
+    //console.log(x[i]); 
+
+  }
+
+}
+
+afisareMasini (["BMW", "Audi", "Golf"]); 
+afisareMasini (["BMW", "Audi", "Golf", "Dacia"]); 
+
+// arrow functions care sunt introduse de Ecma Script 6 - ES6 ( standart de scris a codului)
+
+//ES5 
+function adunare(a,b){
+  //console.log(a+b)
+}
+//ES6 
+adunare = (a,b) => {
+  //console.log(a+b)
+} 
+//ex : 
+inmultire = (x,y) =>{
+  //console.log(x*y); 
+}
+
+
+</Script>
